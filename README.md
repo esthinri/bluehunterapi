@@ -4,26 +4,25 @@ Desafio enviado pela IBM
 
 ## What has already been implemented  
 
-APIRest
-	* Book
-		* create[POST] <server>/books/
-		* edit[PUT] <server>/books/
-		* delete [DELETE] <server>/books/
-		* list all [GET] <server>/books/
-		* Find by Title [GET] <server>/books/by-title/{title}
-		* Find by Author [GET] <server>/books/by-author/{author}
-		* Find by Id [GET] <server>/books/by-id/{id}
-	* Users
-		* create[POST] <server>/users/
-		* edit[PUT] <server>/users/
-		* delete [DELETE] <server>/users/
-		* list all [GET] <server>/users/
-		* Find by Name [GET] <server>/users/by-name/{name}
-		* Find by Id [GET] <server>/users/by-id/{id}
+### Book
+	* create[POST] <server>/books/
+	* edit[PUT] <server>/books/
+	*  delete [DELETE] <server>/books/
+	* list all [GET] <server>/books/
+	* Find by Title [GET] <server>/books/by-title/{title}
+	* Find by Author [GET] <server>/books/by-author/{author}
+	* Find by Id [GET] <server>/books/by-id/{id}
+### Users
+	* create[POST] <server>/users/
+	* edit[PUT] <server>/users/
+	* delete [DELETE] <server>/users/
+	* list all [GET] <server>/users/
+	* Find by Name [GET] <server>/users/by-name/{name}
+	* Find by Id [GET] <server>/users/by-id/{id}
 
 
 
-### Prerequisites
+## Prerequisites
 
 Install NodeJS and MongoDB 
 
@@ -32,7 +31,7 @@ node --version
 mongod
 ```
 
-### Installing
+## Installing
 
 clone this project
 
