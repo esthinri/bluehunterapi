@@ -9,7 +9,7 @@ var express = require('express'),
   
 console.log('mongoose instance connection url connection');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/bluehunter'); 
+mongoose.connect('mongodb://esthinri:<PASSWORD>@bluehunter-shard-00-00-qpvhp.mongodb.net:27017,bluehunter-shard-00-01-qpvhp.mongodb.net:27017,bluehunter-shard-00-02-qpvhp.mongodb.net:27017/test?ssl=true&replicaSet=bluehunter-shard-0&authSource=admin'); 
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
