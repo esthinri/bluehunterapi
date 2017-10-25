@@ -15,6 +15,14 @@ mongoose.connect('mongodb://esthinri:8JvPMoh4Uu9WdYJW@bluehunter-shard-00-00-qpv
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.all('*', function(req, res, next) {
+     var origin = req.get('origin'); 
+     res.header('Access-Control-Allow-Origin', origin);
+     res.header("Access-Control-Allow-Headers", "X-Requested-With");
+     res.header('Access-Control-Allow-Headers', 'Content-Type');
+     next();
+});
+
 console.log('importing routes');
 var userRoutes = require('./routes/UserRoutes'); 
 var bookRoutes = require('./routes/BookRoutes'); 
